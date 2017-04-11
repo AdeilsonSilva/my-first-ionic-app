@@ -1,0 +1,152 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title><ion-icon name="calendar"></ion-icon> Programação</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div padding>
+      <ion-segment [(ngModel)]="pet">
+          <ion-segment-button value="Quarta">
+              Quarta
+          </ion-segment-button>
+          <ion-segment-button value="Quinta">
+              Quinta
+          </ion-segment-button>
+          <ion-segment-button value="Sexta">
+              Sexta
+          </ion-segment-button>
+          <ion-segment-button value="Sábado">
+              Sábado
+          </ion-segment-button>
+      </ion-segment>
+  </div>
+
+  <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Quarta'">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/finn.jpg">
+          </ion-thumbnail>
+          <h2>Finn</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/han.jpg">
+          </ion-thumbnail>
+          <h2>Han</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/rey.jpg">
+          </ion-thumbnail>
+          <h2>Rey</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/luke.jpg">
+          </ion-thumbnail>
+          <h2>Luke</h2>
+        </ion-item>
+      </ion-list>
+  </div>
+
+  <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Quinta'">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/finn.jpg">
+          </ion-thumbnail>
+          <h2>Finn</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/luke.jpg">
+          </ion-thumbnail>
+          <h2>Luke</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/rey.jpg">
+          </ion-thumbnail>
+          <h2>Rey</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/han.jpg">
+          </ion-thumbnail>
+          <h2>Han</h2>
+        </ion-item>
+      </ion-list>
+  </div>
+
+  <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Sexta'">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/luke.jpg">
+          </ion-thumbnail>
+          <h2>Luke</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/finn.jpg">
+          </ion-thumbnail>
+          <h2>Finn</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/rey.jpg">
+          </ion-thumbnail>
+          <h2>Rey</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/han.jpg">
+          </ion-thumbnail>
+          <h2>Han</h2>
+        </ion-item>
+      </ion-list>
+  </div>
+
+  <div [ngSwitch]="pet">
+      <ion-list *ngSwitchCase="'Sábado'">
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/rey.jpg">
+          </ion-thumbnail>
+          <h2>Rey</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/luke.jpg">
+          </ion-thumbnail>
+          <h2>Luke</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/finn.jpg">
+          </ion-thumbnail>
+          <h2>Finn</h2>
+        </ion-item>
+
+        <ion-item>
+          <ion-thumbnail item-left>
+            <img src="../assets/images/han.jpg">
+          </ion-thumbnail>
+          <h2>Han</h2>
+        </ion-item>
+      </ion-list>
+  </div>
+</ion-content>
